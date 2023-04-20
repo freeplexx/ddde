@@ -1,0 +1,24 @@
+#Finding the matching times by looking for the cloest number between two arrays
+
+print(len(IMFHourNn),len(IMFHourPn))
+import array 
+
+X=IMFHourNn=IMFHourN2
+Y=IMFHourPn=IMFHourP2
+#IMFHourNn=IMFHourNn.
+#IMFHourPn=array(IMFHourP2)
+#X=IMFHourNn=np.array([1,2,3,4])
+#Y=IMFHourPn=np.array([5,6,7,8])
+idxm=np.array([])
+idxm=np.array([])
+for k in range(len(IMFHourNn)):
+    for i in range(len(IMFHourPn)):
+        if np.abs(IMFHourNn[k]-IMFHourPn[i])<5/24:
+            idxm=np.append(idxm,i)
+        
+print(idxm)   
+    
+
+
+print(IMFHourPn[idxm.astype(int)])
+print(len(IMFHourPn[idxm.astype(int)]))
